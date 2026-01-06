@@ -265,7 +265,7 @@ export function FeaturesSection() {
                   {/* Right: Mockup */}
                   {features[selectedFeature].hasMockup && featureMockups[selectedFeature] && (
                     <div className="flex items-center justify-center bg-secondary-50 rounded-xl p-4 min-h-[300px]">
-                      <div className="transform scale-75 origin-center">
+                      <div className="transform scale-90 sm:scale-75 origin-center">
                         {featureMockups[selectedFeature]}
                       </div>
                     </div>

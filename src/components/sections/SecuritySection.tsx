@@ -68,7 +68,7 @@ export function SecuritySection() {
           opacity: [0.05, 0.1, 0.05],
         }}
         transition={{ duration: 15, repeat: Infinity }}
-        className="absolute top-0 right-0 w-96 h-96 bg-primary-300 rounded-full blur-3xl"
+        className="absolute top-0 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-primary-300 rounded-full blur-3xl"
       />
 
       <Container className="relative z-10">
@@ -85,7 +85,7 @@ export function SecuritySection() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
-            className="grid grid-cols-2 gap-4"
+            className="grid sm:grid-cols-2 gap-3 sm:gap-4"
           >
             {securityFeatures.map((feature, index) => (
               <motion.div

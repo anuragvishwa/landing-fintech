@@ -17,7 +17,7 @@ export function CTASection() {
           opacity: [0.1, 0.2, 0.1],
         }}
         transition={{ duration: 10, repeat: Infinity }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-500/20 rounded-full blur-3xl"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[450px] lg:w-[600px] h-[300px] sm:h-[450px] lg:h-[600px] bg-primary-500/20 rounded-full blur-3xl"
       />
 
       {/* Floating elements */}

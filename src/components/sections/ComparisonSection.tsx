@@ -157,7 +157,7 @@ function ChatbotSide({
         </div>
 
         {/* Chat content */}
-        <div className="h-[200px] sm:h-[240px] md:h-[280px] overflow-hidden relative">
+        <div className="h-[220px] sm:h-[260px] md:h-[280px] overflow-hidden relative">
           <motion.div
             animate={isScrolling ? { y: -120 } : { y: 0 }}
             transition={{ duration: 2, ease: "easeInOut" }}
@@ -321,7 +321,7 @@ function FlexdashSide({
         </div>
 
         {/* App content */}
-        <div className="h-[200px] sm:h-[240px] md:h-[280px] relative overflow-hidden">
+        <div className="h-[220px] sm:h-[260px] md:h-[280px] relative overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={questionIndex}
@@ -888,10 +888,10 @@ export function ComparisonSection() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 className="text-center"
               >
-                <div className="inline-flex items-center gap-4 px-6 py-3 bg-primary-50 rounded-full border border-primary-200">
-                  <span className="text-secondary-500 line-through">Minutes of reading</span>
-                  <span className="text-secondary-300">vs</span>
-                  <span className="text-primary-700 font-semibold">3 seconds to done</span>
+                <div className="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-4 px-4 sm:px-6 py-3 bg-primary-50 rounded-full border border-primary-200">
+                  <span className="text-secondary-500 line-through text-sm sm:text-base">Minutes of reading</span>
+                  <span className="text-secondary-300 hidden sm:inline">vs</span>
+                  <span className="text-primary-700 font-semibold text-sm sm:text-base">3 seconds to done</span>
                 </div>
               </motion.div>
             )}

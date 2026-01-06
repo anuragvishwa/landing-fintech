@@ -848,7 +848,7 @@ export function InteractiveHeroMockup() {
   }, []);
 
   return (
-    <div className="relative w-full max-w-lg mx-auto px-2 sm:px-0">
+    <div className="relative w-full max-w-[95vw] sm:max-w-lg mx-auto px-1 sm:px-0">
       {/* Main mockup container */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -884,7 +884,7 @@ export function InteractiveHeroMockup() {
           </div>
 
           {/* App content */}
-          <div className="p-4 sm:p-6 bg-gradient-to-b from-white/50 to-secondary-50/30 h-[280px] sm:h-[320px] overflow-hidden">
+          <div className="p-3 sm:p-6 bg-gradient-to-b from-white/50 to-secondary-50/30 h-[260px] sm:h-[320px] overflow-hidden">
             {/* Dynamic screen content based on current screen state */}
             <AnimatePresence mode="wait">
               <motion.div

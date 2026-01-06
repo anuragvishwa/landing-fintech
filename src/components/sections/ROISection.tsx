@@ -43,7 +43,7 @@ function SliderInput({
         step={step}
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="w-full h-2 bg-secondary-700 rounded-lg appearance-none cursor-pointer accent-primary-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:bg-primary-500 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-lg [&::-webkit-slider-thumb]:shadow-primary-500/30 [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:bg-primary-500 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:cursor-pointer [&::-moz-range-thumb]:border-0"
+        className="w-full h-2 bg-secondary-700 rounded-lg appearance-none cursor-pointer accent-primary-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:bg-primary-500 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-lg [&::-webkit-slider-thumb]:shadow-primary-500/30 [&::-moz-range-thumb]:w-5 [&::-moz-range-thumb]:h-5 [&::-moz-range-thumb]:bg-primary-500 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:cursor-pointer [&::-moz-range-thumb]:border-0"
       />
       <div className="flex justify-between text-xs text-secondary-500">
         <span>{prefix}{min.toLocaleString()}{suffix}</span>
@@ -246,14 +246,14 @@ export function ROISection() {
                   </motion.div>
 
                   {/* Calculation breakdown */}
-                  <div className="p-3 bg-secondary-800/50 rounded-xl border border-secondary-700/50">
-                    <p className="text-xs text-secondary-400 font-mono">
+                  <div className="p-3 bg-secondary-800/50 rounded-xl border border-secondary-700/50 overflow-x-auto">
+                    <p className="text-[10px] sm:text-xs text-secondary-400 font-mono whitespace-nowrap">
                       {ticketsPerMonth.toLocaleString()} tickets × {minutesPerTicket} min = {calculations.totalMinutes.toLocaleString()} min = {calculations.totalHours} hrs
                     </p>
-                    <p className="text-xs text-secondary-400 font-mono mt-1">
+                    <p className="text-[10px] sm:text-xs text-secondary-400 font-mono mt-1 whitespace-nowrap">
                       {calculations.totalHours} hrs × ${hourlyRate}/hr = <span className="text-secondary-300">${calculations.monthlyCost.toLocaleString()}/mo</span>
                     </p>
-                    <p className="text-xs text-green-400 font-mono mt-1">
+                    <p className="text-[10px] sm:text-xs text-green-400 font-mono mt-1 whitespace-nowrap">
                       ${calculations.monthlyCost.toLocaleString()} × {reductionPercent}% = <span className="font-semibold">${calculations.monthlySavings.toLocaleString()}/mo saved</span>
                     </p>
                   </div>

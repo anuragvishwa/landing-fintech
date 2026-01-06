@@ -68,7 +68,7 @@ export function ScenariosSection() {
           opacity: [0.05, 0.1, 0.05],
         }}
         transition={{ duration: 15, repeat: Infinity }}
-        className="absolute top-0 left-0 w-96 h-96 bg-primary-300 rounded-full blur-3xl"
+        className="absolute top-0 left-0 w-64 sm:w-96 h-64 sm:h-96 bg-primary-300 rounded-full blur-3xl"
       />
 
       <Container className="relative z-10">

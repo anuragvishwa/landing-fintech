@@ -33,7 +33,7 @@ export function HeroSection() {
           opacity: [0.3, 0.5, 0.3]
         }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 left-10 w-72 h-72 bg-primary-400/30 rounded-full blur-3xl"
+        className="absolute top-20 left-10 w-48 sm:w-72 h-48 sm:h-72 bg-primary-400/30 rounded-full blur-3xl"
       />
       <motion.div
         animate={{
@@ -41,7 +41,7 @@ export function HeroSection() {
           opacity: [0.2, 0.4, 0.2]
         }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-20 right-10 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl"
+        className="absolute bottom-20 right-10 w-64 sm:w-96 h-64 sm:h-96 bg-primary-500/20 rounded-full blur-3xl"
       />
       <motion.div
         animate={{
@@ -49,7 +49,7 @@ export function HeroSection() {
           opacity: [0.1, 0.2, 0.1]
         }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-        className="absolute top-1/2 left-1/3 w-64 h-64 bg-indigo-400/20 rounded-full blur-3xl"
+        className="absolute top-1/2 left-1/3 w-40 sm:w-64 h-40 sm:h-64 bg-indigo-400/20 rounded-full blur-3xl"
       />
 
       {/* Floating decorative elements */}
